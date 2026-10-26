@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLACKWHEELCake, Pastries &amp; Bakery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <nav>
+  <div class="logo"><span class="dot"></span>BLACKWHEELCAKE</div>
+  <div class="nav-links">
+    <a href="#menu">Menu</a>
+    <a href="#about">Story</a>
+    <a href="#process">Process</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#order">Contact</a>
+  </div>
+  <a href="#order" class="nav-cta">Order Now</a>
+</nav>
+
+<header class="hero">
+  <div class="hero-grid">
+    <div>
+      <span class="hero-eyebrow">Cakes · Pastries · Desserts · Bakery</span>
+      <span style="font-family: 'Lucida Handwriting', cursive; font-size:8rem; color:#f8f6f2;">Bite</span></br><span class="hero-eyebrow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></br></br>
+      <!--<p>BLACKWHEELCAKE bakes cakes, pastries, and desserts the slow way — one wheel of flour, one round of butter, one batch at a time. No shortcuts on the way to the counter.</p>-->
+      <div class="btn-row">
+        <!--a href="#menu" class="btn btn-solid">View Menu</a>-->
+        <a href="#order" class="btn btn-outline">Order Now</a>
+      </div>
+    </div>
+    <div class="wheel-wrap">
+      <svg id="wheel" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="200" r="190" fill="none" stroke="#3a342c" stroke-width="2"/>
+        <circle cx="200" cy="200" r="150" fill="none" stroke="#4a3a24" stroke-width="1"/>
+        <g stroke="#E7B94C" stroke-width="2">
+          <line x1="200" y1="10" x2="200" y2="390"/>
+          <line x1="10" y1="200" x2="390" y2="200"/>
+          <line x1="56" y1="56" x2="344" y2="344"/>
+          <line x1="344" y1="56" x2="56" y2="344"/>
+        </g>
+        <circle cx="200" cy="200" r="60" fill="none" stroke="#E7B94C" stroke-width="2"/>
+        <g fill="#E7B94C">
+          <circle cx="200" cy="20" r="5"/>
+          <circle cx="200" cy="380" r="5"/>
+          <circle cx="20" cy="200" r="5"/>
+          <circle cx="380" cy="200" r="5"/>
+          <circle cx="66" cy="66" r="4"/>
+          <circle cx="334" cy="66" r="4"/>
+          <circle cx="66" cy="334" r="4"/>
+          <circle cx="334" cy="334" r="4"/>
+        </g>
+      </svg>
+      <div class="wheel-center"><span>Black&nbsp;wheel</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="menu">
+  <div class="section-head center">
+    <span class="eyebrow">The Full Spread</span>
+    <h2>Cakes, Pastries &amp; Bakery</h2>
+    <p>Four categories, one standard. Filter the wheel below to see what's on it.</p>
+  </div>
+
+  <div class="dial-nav" id="dialNav">
+    <button class="dial-btn active" data-filter="all">All</button>
+    <button class="dial-btn" data-filter="cake">Cakes</button>
+    <button class="dial-btn" data-filter="pastry">Pastries</button>
+    <button class="dial-btn" data-filter="dessert">Desserts</button>
+    <button class="dial-btn" data-filter="bakery">Bakery</button>
+  </div>
+
+  <div class="menu-grid" id="menuGrid">
+    <div class="menu-item" data-cat="cake"><img class="menu-photo" src="images/products/chocolate.jpg" alt="Chocolate truffle cake"><span class="menu-tag">Cake</span><h3>Chocolate truffle cake </h3><p class="desc">Dark cocoa sponge, espresso ganache, a ring of chocolate shards on top.</p><span class="price">₹1000 / 12 person</span></div>
+    <div class="menu-item" data-cat="cake"><img class="menu-photo" src="images/products/cake4.jpg" alt="Blackforest cake"><span class="menu-tag">Cake</span><h3>Blackforest cake </h3><p class="desc">black butter sponge, chocolate flaks, fresh cream finishing.</p><span class="price">₹700 / 12 person</span></div>
+    <div class="menu-item" data-cat="cake"><img class="menu-photo" src="images/products/cake5.jpg" alt="Red Velvet cheese cake"><span class="menu-tag">Cake</span><h3>Red Velvet cheese cake</h3><p class="desc">Cream cheese frosting, sponch crumb, classic and rich cheese cream.</p><span class="price">₹1500 /12 person</span></div>
+    <div class="menu-item" data-cat="cake"><img class="menu-photo" src="images/products/butter.jpg" alt="Butter scotch cake"><span class="menu-tag">cake</span><h3>butter scotch</h3><p class="desc">fresh and delicious apple caramel butter scotch .</p><span class="price">₹800 / 12 person</span></div>
+    <div class="menu-item" data-cat="cake"><img class="menu-photo" src="images/products/cake7.jpg" alt="Strawberry cake"><span class="menu-tag">cake</span><h3>strawberry cake</h3><p class="desc">crush  strawberries in a light cake base.</p><span class="price">₹800 /12 person</span></div>
+    <div class="menu-item" data-cat="cake"><img class="menu-photo" src="images/products/cake8.jpg" alt="black currant cake"><span class="menu-tag">cake</span><h3>black currant cake</h3><p class="desc">purple rosart cake blackcurrant fruit crush filling cream.</p><span class="price">₹900 / 12person</span></div>
+    <div class="menu-item" data-cat="cake"><img class="menu-photo" src="images/products/cake9.jpg" alt="yummy caramel cake layer full butterscotch nuts with caramel  cream finishing"><span class="menu-tag">cake</span><h3>Yummy Caramel Cake</h3><p class="desc">A delightful layer cake with butterscotch nuts and caramel cream finishing.</p><span class="price">₹1200 / 12 person</span></div>
+    <div class="menu-item" data-cat="cake"><img class="menu-photo" src="images/products/cake10.jpg" alt="hot chocolate brownie"><span class="menu-tag">cake</span><h3>Hot Chocolate Brownie</h3><p class="desc">A rich and fudgy brownie with a hint of hot chocolate.</p><span class="price">₹1500 / 1kg</span></div>
+    <div class="menu-item" data-cat="dessert"><img class="menu-photo" src="images/products/dst1.jpeg" alt="japanice cake"><span class="menu-tag">Dessert</span><h3>cashewnut cookie with french butter cream </h3><p class="desc"> sweet yummy cookie cake.</p><span class="price">₹70 / 1 person</span></div>
+    <div class="menu-item" data-cat="dessert"><img class="menu-photo" src="images/products/brownie.jpg" alt="hot chocolate brownie"><span class="menu-tag">Dessert</span><h3>chocolate dark brownie  </h3><p class="desc">chocolate brownie with a rich, chocolatey flavor.</p><span class="price">₹120 / 1 slice</span></div>
+    <div class="menu-item" data-cat="dessert"><img class="menu-photo" src="images/products/donut.jpg" alt="chocolate Donut"><span class="menu-tag">dessert</span><h3>chocolate Donut</h3><p class="desc">donut with a rich, chocolatey flavor.</p><span class="price">₹60 / 1 person</span></div>
+    <div class="menu-item" data-cat="dessert"><img class="menu-photo" src="images/products/creambun.jpg" alt="cream bun"><span class="menu-tag">dessert</span><h3>French Cream Bun</h3><p class="desc">Soft enriched dough, milk wash, best eaten fresh.</p><span class="price">₹60 / 1piece</span></div>
+    <div class="menu-item" data-cat="bakery"><img class="menu-photo" src="images/products/bananacake.jpg" alt="Banana cake"><span class="menu-tag">Bakery</span><h3> fresh banana cake  ;</h3><p class="desc">cake with fresh banana and cashew nuts.</p><span class="price">₹50 / 80G </span></div>
+    <div class="menu-item" data-cat="bakery"><img class="menu-photo" src="images/products/bread.jpg" alt="milk  bread"><span class="menu-tag">Bakery</span><h3>MILK BREAD</h3><p class="desc"> soft  bread fresh baked daily .</p><span class="price">₹60 /350 gm</span></div>
+    <div class="menu-item" data-cat="bakery"><img class="menu-photo" src="images/products/croissant.jpg" alt="croissant"><span class="menu-tag">Bakery</span><h3>French Croissant</h3><p class="desc">Flaky, buttery pastry, perfect for breakfast or a snack.</p><span class="price">₹80 / 1 piece</span></div>
+    <div class="menu-item" data-cat="bakery"><img class="menu-photo" src="images/products/garlicbread.jpg" alt="garlic bread"><span class="menu-tag">Bakery</span><h3>Garlic Bread</h3><p class="desc">Toasted bread with a layer of garlic butter.</p><span class="price">₹90 / 150 </span></div>
+    <div class="menu-item" data-cat="pastries"><img class="menu-photo" src="images/products/frenchmacaron.jpg" alt="french macarons"><span class="menu-tag">Pastries</span><h3>french macarons</h3><p class="desc">flavour macarons with french butter cream.</p><span class="price">₹100 / 4 spiece</span></div>
+    <div class="menu-item" data-cat="pastries"><img class="menu-photo" src="images/products/cheesecake.jpg" alt="cheesecake"><span class="menu-tag">Pastries</span><h3>Cheesecake</h3><p class="desc">Creamy cheesecake with a buttery crust.</p><span class="price">₹180 / 1 slice</span></div>
+    <div class="menu-item" data-cat="pastries"><img class="menu-photo" src="images/products/nuttelabar.jpg" alt="nutella bar"><span class="menu-tag">Pastries</span><h3>Nutella Bar</h3><p class="desc">Rich and chocolatey, perfect for a sweet treat.</p><span class="price">₹80 / 1 piece</span></div>
+    <div class="menu-item" data-cat="pastries"><img class="menu-photo" src="images/products/cakepop.jpg" alt="cake pop"><span class="menu-tag">Pastries</span><h3>cake pop</h3><p class="desc">outer chocolaty whith butter scotch cake.</p><span class="price">₹60 / 2piece</span></div>
+    </div>
+</section>
+
+<section id="about">
+  <div class="about-grid"> 
+    <div class="about-visual"><img src="images/donutdis.jpg" alt="Baker at work" style="width:100%; height:100%; object-fit:cover;"></div>
+    </div>
+    <div class="about-text">
+      <span class="eyebrow">Our Story</span>
+      <h2>Named for the wheel that never stops turning.</h2>
+      <p>BLACKWHEELCAKE started with one cast-iron mixer wheel and a baker who refused to bake anything she wouldn't eat herself. The name stuck — it's the wheel that turns the batter, and the cycle that repeats every single morning before sunrise.</p>
+      <p>Today the wheel is bigger, the ovens are hotter, but the standard hasn't moved: small batches, real butter, nothing that sits more than a day before it's sold.</p>
+      <div class="stat-row">
+        <div><strong>4+</strong><span>Years Turning</span></div>
+        <div><strong>50</strong><span>Recipes on Rotation</span></div>
+        <div><strong>365</strong><span>Bake Days a Year</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="section-head center">
+    <span class="eyebrow">How It's Made</span>
+    <h2>One Wheel, Four Turns</h2>
+    <p>Every product on the menu passes through the same four stages before it reaches the counter.</p>
+  </div>
+  <div class="process-row">
+    <div class="process-step"><span class="pnum">01</span><h3>Mix &amp; Ferment</h3><p>Flour, butter, and time — doughs rest as long as they need to, not as long as the clock allows.</p></div>
+    <div class="process-step"><span class="pnum">02</span><h3>Shape &amp; Proof</h3><p>Hand-shaped in small batches, proofed slow at room temperature for real structure and flavor.</p></div>
+    <div class="process-step"><span class="pnum">03</span><h3>Bake &amp; Cool</h3><p>Stone-deck ovens, watched not timed. Cakes cool fully before they're ever filled or iced.</p></div>
+    <div class="process-step"><span class="pnum">04</span><h3>Finish &amp; Serve</h3><p>Glazed, dusted, or left plain — whatever the recipe actually calls for, nothing extra.</p></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-head center">
+    <span class="eyebrow">From the Counter</span>
+    <h2>A Few Recent Bakes</h2>
+  </div>
+  <div class="gallery-grid">  
+  </div>
+ </div>
+</section>
+
+<section id="order">
+  <div class="section-head center">
+    <span class="eyebrow">Custom Orders</span>
+    <h2>Put Something on the Wheel</h2>
+    <p>Birthdays, weddings, or just a Tuesday — give us three days' notice and we'll build it around you.</p>
+  </div>
+  <form class="order-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Request sent — we will reply within a day';">
+    <label for="name">Name</label>
+    <input id="name" type="text" placeholder="Your full name" required>
+    <label for="phone">Phone</label>
+    <input id="phone" type="tel" placeholder="Phone number" required>
+    <label for="type">Product type</label>
+    <select id="type" required>
+      <option value="" disabled selected>Choose a category</option>
+      <option>Custom cake</option>
+      <option>Pastry box</option>
+      <option>Dessert platter</option>
+      <option>Bakery / bread order</option>
+    </select>
+    <label for="details">Details</label>
+    <textarea id="details" rows="4" placeholder="Occasion, flavor, size, quantity..."></textarea>
+    <button type="submit">Send Order Request</button>
+  </form>
+  
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="logo"><span class="dot"></span>BLACKWHEELCAKE</div>
+      <p>Cakes, pastries, desserts, and bakery products — baked fresh every day, one wheel at a time.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#menu">Cakes</a>
+      <a href="#menu">Pastries</a>
+      <a href="#menu">Desserts</a>
+      <a href="#menu">Bakery</a>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="#about">Our Story</a>
+      <a href="#process">Process</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <a href="#order">Order Online</a>
+      <a href="tel:+917708329947">+91 7708009947</a>
+      <a href="mailto:blackwheelcake2021@gmail.com">blackwheelcake2021@gmail.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>©2026 BLACKWHEELCAKE · kumbakonam thanjavur</span>
+    <span>Open daily, 9am – 10pm</span>
+    <span>thank you for visiting!</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
